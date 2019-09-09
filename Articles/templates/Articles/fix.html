@@ -9,9 +9,9 @@
 <body>
   <form action="/Articles/edit/{{ article.pk }}">
     <div><label for='title'>제목 : </label></div>
-    <div><input type='text' id='title' value = {{a.title}} name='title'></div>
+    <div><input type='text' id='title' value = "{{ article.title }}" name='title'></div>
     <div><label for='content'>내용: </label></div>
-    <div><input type='textarea' id='content' value = {{a.content}} name='content'></div>
+    <div><input type='textarea' id='content' value = "{{ article.content }}" name='content'></div>
     <input type='submit' value='submit'>
   </form>
 </body>
