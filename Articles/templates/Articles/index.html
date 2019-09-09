@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+  <table >
+    <tr>
+      <th>제목</th>
+      <th>내용</th>
+      <th>작성 시간</th>
+    </tr>
+    {% for item in a%}
+    <tr style='border: solid black 1px; background-color:cornsilk'>
+      <td><a href='detail/{{item.pk}}'>{{item.title}}</td></a>
+      <td>{{item.content}}</td>
+      <td>{{item.created_at}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  <a href="new"><button>새 글 쓰기</button></a>
+  <a href='delete_all'><button> 모두 지우기</button></a>
+</body>
+</html>

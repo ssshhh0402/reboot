@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div><label for="title"> 제목</label></div>
+  <div><p id="title">{{a.title}}</p></div>
+  <div><label for="content">내용</label></div>
+  <div><p id="content">{{a.content}}</p></div>
+  <a href="/Articles/delete/{{a.pk}}"><button>삭제하기</button></a>
+  <a href="/Articles/fix/{{a.pk}}"><button>수정하기</button></a>
+  <a href="/Articles"><button>목록</button></a>
+</body>
+</html>
