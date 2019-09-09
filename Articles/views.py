@@ -5,9 +5,9 @@ from .models import Articles
 
 
 def index(request):
-    a = Articles.objects.all()
+    article = Articles.objects.all()
     context = {
-        'a': a
+        'article': article
     }
     return render(request, 'Articles/index.html', context)
 

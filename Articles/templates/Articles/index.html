@@ -14,7 +14,7 @@
       <th>내용</th>
       <th>작성 시간</th>
     </tr>
-    {% for item in a%}
+    {% for item in article %}
     <tr style='border: solid black 1px; background-color:cornsilk'>
       <td><a href='detail/{{item.pk}}'>{{item.title}}</td></a>
       <td>{{item.content}}</td>
