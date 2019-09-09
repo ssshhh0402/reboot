@@ -7,7 +7,7 @@
   <title>Document</title>
 </head>
 <body>
-  <form action="/Articles/edit/{{a.pk}}">
+  <form action="/Articles/edit/{{ article.pk }}">
     <div><label for='title'>제목 : </label></div>
     <div><input type='text' id='title' value = {{a.title}} name='title'></div>
     <div><label for='content'>내용: </label></div>

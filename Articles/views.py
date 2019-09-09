@@ -43,7 +43,7 @@ def delete(request, g_pk):
 def fix(request, g_pk):
     a = Article.objects.get(pk=g_pk)
     context = {
-        'a': a
+        'article': article,
     }
     return render(request, 'Articles/fix.html', context)
 
