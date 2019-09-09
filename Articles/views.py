@@ -26,9 +26,9 @@ def create(request):
 
 
 def detail(request, g_pk):
-    a = Articles.objects.get(pk=g_pk)
+    article = Articles.objects.get(pk=g_pk)
     context = {
-        'a': a
+        'article': article
     }
 
     return render(request, 'Articles/detail.html', context)
