@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <form action='{% url 'jobs:job' %}' method='POST'>
+    {% csrf_token %}
+    <label for='name'><h1>너의 이름은?</h1></label>
+    <input type='text' id='name' name='name'>
+    <input type='submit' value='확인하기'>
+  </form>
+  <a href='{% url 'jobs:l_admin' %}'><button>관리자</button></a>
+</body>
+</html>
