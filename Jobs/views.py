@@ -21,7 +21,7 @@ def jobs(request):
         p.name = a
         p.job = c
         p.save()
-#직업 결과에 따라 giphy 호출
+# 직업 결과에 따라 giphy 호출
     api_key = config('GIPHY_API_KEY')
     url = f'http://api.giphy.com/v1/gifs/search?api_key={api_key}&q={c}&lang=en'
     import requests

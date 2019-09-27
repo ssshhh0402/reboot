@@ -11,6 +11,7 @@
   <div><p id="title">{{a.title}}</p></div>
   <div><label for="content">내용</label></div>
   <div><p id="content">{{a.content}}</p></div>
+  <img src='{{a.image.url}}' alt="{{article.image.name}}">
   <a href="/Articles/delete/{{a.pk}}"><button>삭제하기</button></a>
   <a href="/Articles/fix/{{a.pk}}"><button>수정하기</button></a>
   <a href="/Articles"><button>목록</button></a>
